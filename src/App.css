@@ -50,6 +50,7 @@ body {
   /* border-radius: 10px; */
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 
@@ -117,6 +118,7 @@ body {
   justify-content: space-between;
   align-items: center;
   column-gap: 20%;
+  padding-top: 150px;
 }
 
 .hero-section-container .hero-text-section {
