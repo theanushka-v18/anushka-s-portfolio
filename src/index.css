@@ -1,0 +1,22 @@
+/* Scrollbar container */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* For horizontal scrollbars */
+  }
+  
+  /* Track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #2b2b2b; /* Dark background to match the site's background */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: inset 8px 8px 16px #1e1e1e, 
+                inset -8px -8px 16px #383838; /* Neumorphic shadow */
+  }
+  
+  /* Handle (scrollbar thumb) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #F2C94C; /* Color to match the button theme */
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px #c5a23c, 
+                -8px -8px 16px #ffe55c; /* Neumorphism shadows */
+  }
+  

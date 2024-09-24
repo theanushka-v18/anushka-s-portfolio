@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #31333b;
+  --secondary-bg-color: #3d3e42;
+  --primary-text-color: #f9f9f9;
+  --secondary-text-color: #ffc86b;
+  --montserrat-font: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: var(--montserrat-font);
+  background-color: var(--primary-bg-color);
+  /* background-image: linear-gradient(
+    50deg,
+    hsl(228deg 9% 21%) 0%,
+    hsl(228deg 8% 22%) 4%,
+    hsl(228deg 7% 22%) 9%,
+    hsl(228deg 6% 23%) 15%,
+    hsl(228deg 6% 24%) 23%,
+    hsl(228deg 5% 24%) 36%,
+    hsl(228deg 4% 25%) 54%,
+    hsl(266deg 10% 35%) 67%,
+    hsl(315deg 15% 45%) 76%,
+    hsl(342deg 30% 57%) 83%,
+    hsl(3deg 57% 68%) 89%,
+    hsl(21deg 90% 71%) 95%,
+    hsl(38deg 100% 71%) 100%
+  ); */
+}
+
+.navbar-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 16px;
+}
+
+.navbar-container .avatar img {
+  width: 30px;
+}
+
+.active {
+  color: var(--secondary-text-color);
+  border-bottom: 1px solid var(--secondary-text-color);
+}
+
+.nav-links {
+  width: 50%;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.navbar-container .toggle-theme svg {
+  color: var(--primary-text-color);
+  width: 40px;
+  cursor: pointer;
+}
+
+.btn-section button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+
+  background: var(--primary-bg-color);
+  color: white;
+
+  box-shadow: 5px 5px 20px #343538, -5px -5px 20px #46474c;
+
+  padding: 4px 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.btn-section button:hover {
+  border-bottom: 2pt solid var(--secondary-bg-color);
+  translate: 0pt -1pt;
+}
+
+.hero-section-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 32px;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20%;
+}
+
+.hero-section-container .hero-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 16px;
+}
+
+.hero-section-container .hero-text-section h2 {
+  font-size: 64px;
+  color: var(--secondary-text-color);
+  letter-spacing: 2px;
+}
+
+.hero-section-container .hero-text-section p {
+  font-size: 20px;
+  color: var(--primary-text-color);
+}
+
+.hero-section-container .hero-text-section p.hello-text {
+  font-weight: 600;
+}
+.hero-section-container .hero-text-section p.hello-text span {
+  font-size: 32px;
+  display: inline-block;
+  animation: wave 1.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-section-container .hero-text-section .btn-section {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.hero-section-container .hero-avatar-section {
+  flex-shrink: 0;
+}
+
+/* ---------- about me section ------------ */
+
+.about-section-container {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  margin-top: 180px;
+  color: var(--primary-text-color);
+  font-weight: 200;
+  padding: 16px;
+  font-size: 20px;
+}
+
+.about-section-container h2 {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.about-text-section {
+  margin: auto;
+  margin-top: 40px;
+  word-spacing: 5px;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.education-experience-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  column-gap: 10px;
+}
+
+.about-text-section span {
+  font-weight: bold;
+}
+
+.education,
+.experience {
+  width: 50%;
+}
+
+.education-timeline-item {
+  margin-block: 40px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1.2px;
+}
+
+.education-timeline-item div {
+  width: 60%;
+}
+
+.education-timeline-item section .year {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.education-timeline-item section {
+  font-style: italic;
+  font-size: 12px;
+  width: 40%;
+}
+
+.education-timeline-item div p.education-title {
+  font-weight: 600;
+}
+
+.education-timeline-item div p.institute {
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* ---------- animations ----------- */
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(-8deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
