@@ -23,9 +23,9 @@ li {
 
 body {
   font-family: var(--montserrat-font);
-  background-color: var(--primary-bg-color);
-  /* background-image: linear-gradient(
-    50deg,
+  /* background-color: var(--primary-bg-color); */
+  background-image: linear-gradient(
+    to right,
     hsl(228deg 9% 21%) 0%,
     hsl(228deg 8% 22%) 4%,
     hsl(228deg 7% 22%) 9%,
@@ -39,7 +39,18 @@ body {
     hsl(3deg 57% 68%) 89%,
     hsl(21deg 90% 71%) 95%,
     hsl(38deg 100% 71%) 100%
-  ); */
+  );
+}
+
+.navbar-parent-container {
+    background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-container {

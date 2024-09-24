@@ -3,8 +3,9 @@ import avatarImg from "../assets/avatar.png";
 import LightModeIcon from '@mui/icons-material/LightMode';
 
 const Navbar = () => {
-  return (
-    <div className="navbar-container">
+    return (
+      <div className="navbar-parent-container">
+      <div className="navbar-container">
         <div className="avatar">
             <img src={avatarImg} alt="Avatar" />
         </div>
@@ -28,6 +29,7 @@ const Navbar = () => {
         <div className="toggle-theme">
             <LightModeIcon />
         </div>
+    </div>
     </div>
   )
 }
