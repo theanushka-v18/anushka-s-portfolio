@@ -275,6 +275,7 @@ body {
 }
 
 .project-card-container {
+  /* border: 1px solid blue; */
   width: 25%;
   border-radius: 10px;
   text-align: center;
@@ -283,6 +284,11 @@ body {
   background: rgb(249, 249, 249, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+
+}
+
+.project-card-container:hover {
+  box-shadow: 1px 1px 10px 2px rgba(249,249,249,1);
 }
 
 
