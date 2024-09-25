@@ -7,7 +7,8 @@
 :root {
   --primary-bg-color: #31333b;
   --secondary-bg-color: #3d3e42;
-  --primary-text-color: #f9f9f9;
+  /* --primary-text-color: #f9f9f9; */
+  --primary-text-color: #dedede;
   --secondary-text-color: #ffc86b;
   --montserrat-font: "Montserrat", sans-serif;
 }
@@ -367,6 +368,55 @@ body {
 .project-links-title .project-links svg {
   font-size: 24px;
 }
+
+/* ----------- skills & certifications ---------------- */
+.skills-certifications-container {
+  padding: 16px;
+}
+
+.skills-certifications-container h2 {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+.skills-container {
+  width: 90%;
+  margin: auto;
+  padding: 16px;
+  margin-top: 40px;
+  background-color: var(--primary-text-color);
+  /* background-color: #dedede; */
+  border-radius: 20px;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.skills-container .skills {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.skills div {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 16px;
+}
+
+.skills img {
+  width: 100px;
+}
+
+.skills img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
 /* ---------- animations ----------- */
 
 @keyframes wave {
