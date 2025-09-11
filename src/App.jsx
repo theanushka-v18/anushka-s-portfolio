@@ -1,20 +1,16 @@
-// import { Switch } from '@mui/material'
-import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
-
-function App() {
+const App = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h1>Anushka Verma</h1>
+      <h4>Re-developing this portfolio website</h4>
+    </div>
   );
-}
+};
 
 export default App;
