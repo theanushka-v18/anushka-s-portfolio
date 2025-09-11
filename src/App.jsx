@@ -8,6 +8,8 @@ const App = () => {
       }}
     >
       <h1>Anushka Verma</h1>
+      <br />
+      <br />
       <h4>Re-developing this portfolio website</h4>
     </div>
   );
