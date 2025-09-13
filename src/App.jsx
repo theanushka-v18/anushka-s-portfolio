@@ -1,6 +1,8 @@
+import { Box, Title } from "@mantine/core";
+
 const App = () => {
   return (
-    <div
+    <Box
       style={{
         display: "flex",
         justifyContent: "center",
@@ -9,9 +11,9 @@ const App = () => {
         gap: "20px",
       }}
     >
-      <h1>Anushka Verma</h1>
-      <h4>Re-developing this portfolio website</h4>
-    </div>
+      <Title order={1}>Anushka Verma</Title>
+      <Title order={4}>Re-developing this portfolio website</Title>
+    </Box>
   );
 };
 
