@@ -5,6 +5,20 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+:root {
+  --secondary-theme-color: #FFC86B;
+}
+
+html[data-mantine-color-scheme="light"] {
+  --mantine-color-body: #F9F9F9 !important; /* your custom light background */
+  --mantine-color-text: #31333B !important; /* your custom light text */
+}
+
+html[data-mantine-color-scheme="dark"] {
+  --mantine-color-body: #121212; /* your custom dark background */
+  --mantine-color-text: #31333B; /* your custom dark text */
+}
+
 body {
   background-color: var(--mantine-color-body);
   color: var(--mantine-color-text);

@@ -1,29 +1,27 @@
-import { Box, Title, Button, useMantineColorScheme } from "@mantine/core";
+import { Box, Title } from "@mantine/core";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
-  const { colorScheme, setColorScheme } = useMantineColorScheme();
-
   return (
-    <Box
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        gap: "20px",
-        height: "100vh",
-      }}
-    >
-      <Title order={1}>Anushka Verma</Title>
-      <Title order={4}>Re-developing this portfolio website</Title>
-
-      <Button
-        onClick={() =>
-          setColorScheme(colorScheme === "dark" ? "light" : "dark")
-        }
-      >
-        Toggle {colorScheme === "dark" ? "Light" : "Dark"} Mode
-      </Button>
+    <Box>
+      <Navbar />
+      <Box>
+        <Box id="home" h="100vh">
+          <Title order={2}>Home Section</Title>
+        </Box>
+        <Box id="about" h="100vh">
+          <Title order={2}>About Section</Title>
+        </Box>
+        <Box id="projects" h="100vh">
+          <Title order={2}>Projects Section</Title>
+        </Box>
+        <Box id="skills-certifications" h="100vh">
+          <Title order={2}>Skills & Certifications Section</Title>
+        </Box>
+        <Box id="contact" h="100vh">
+          <Title order={2}>Contact Section</Title>
+        </Box>
+      </Box>
     </Box>
   );
 };
