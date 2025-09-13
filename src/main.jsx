@@ -7,7 +7,11 @@ import { MantineProvider } from "@mantine/core";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MantineProvider>
+    <MantineProvider
+      defaultColorScheme="light" // 👈 sets default theme
+      withGlobalStyles
+      withNormalizeCSS
+    >
       <App />
     </MantineProvider>
   </StrictMode>
