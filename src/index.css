@@ -2,21 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-:root {
-  --secondary-theme-color: #FFC86B;
+  font-family: "Montserrat", sans-serif;
 }
 
 html[data-mantine-color-scheme="light"] {
-  --mantine-color-body: #F9F9F9 !important; /* your custom light background */
-  --mantine-color-text: #31333B !important; /* your custom light text */
+  --mantine-color-body: #f9f9f9 !important; /* your custom light background */
+  --mantine-color-text: #31333b !important; /* your custom light text */
+  --secondary-theme-color: #c8522a;
 }
 
 html[data-mantine-color-scheme="dark"] {
   --mantine-color-body: #121212; /* your custom dark background */
-  --mantine-color-text: #31333B; /* your custom dark text */
+  --mantine-color-text: #31333b; /* your custom dark text */
+  --secondary-theme-color: #ffc86b;
 }
 
 body {

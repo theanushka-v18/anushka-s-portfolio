@@ -1,26 +1,21 @@
-import { Box, Title } from "@mantine/core";
+import { Box } from "@mantine/core";
 import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import SkillsCertifications from "./components/SkillsCertifications/SkillsCertifications";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
     <Box>
       <Navbar />
-      <Box>
-        <Box id="home" h="100vh">
-          <Title order={2}>Home Section</Title>
-        </Box>
-        <Box id="about" h="100vh">
-          <Title order={2}>About Section</Title>
-        </Box>
-        <Box id="projects" h="100vh">
-          <Title order={2}>Projects Section</Title>
-        </Box>
-        <Box id="skills-certifications" h="100vh">
-          <Title order={2}>Skills & Certifications Section</Title>
-        </Box>
-        <Box id="contact" h="100vh">
-          <Title order={2}>Contact Section</Title>
-        </Box>
+      <Box pos={"relative"}>
+        <Home />
+        <About />
+        <Projects />
+        <SkillsCertifications />
+        <Contact />
       </Box>
     </Box>
   );

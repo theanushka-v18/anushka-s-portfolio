@@ -20,8 +20,27 @@ const Navbar = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
-    <Group w={"100%"} px={"xl"} pos={"fixed"} justify="space-between" mt={"xs"}>
+    <Group
+      w={"100%"}
+      px={"xl"}
+      pos={"fixed"}
+      justify="space-between"
+      style={{
+        backdropFilter: "blur(5px)",
+        background:
+          colorScheme === "light"
+            ? "rgba(255, 255, 255, 0.6)"
+            : "rgba(0, 0, 0, 0.4)",
+        borderBottom:
+          colorScheme === "light"
+            ? "1px solid rgba(255, 255, 255, 0.4)"
+            : "none",
+        zIndex: 1000,
+      }}
+      mb={0}
+    >
       <Image w={30} src={avatar} />
 
       <Group spacing="xl" p="md" gap={"xl"} position="center">
@@ -31,7 +50,8 @@ const Navbar = () => {
             component="button"
             onClick={() => handleScroll(id)}
             style={{
-              fontWeight: "bold",
+              fontWeight: "500",
+              letterSpacing: "1px",
               color:
                 activeId === id ? "var(--secondary-theme-color)" : "inherit",
             }}
