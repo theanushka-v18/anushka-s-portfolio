@@ -1,23 +1,84 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
-html[data-mantine-color-scheme="light"] {
-  --mantine-color-body: #f9f9f9 !important; /* your custom light background */
-  --mantine-color-text: #31333b !important; /* your custom light text */
-  --secondary-theme-color: #c8522a;
+:root {
+  --bg: #07070e;
+  --bg2: #0c0c18;
+  --bg3: #11111f;
+  --card: #13131f;
+  --card2: #1a1a2e;
+  --border: #252538;
+  --border2: #32324a;
+  --gold: #f0c040;
+  --gold2: #d4a020;
+  --gold-dim: rgba(240, 192, 64, 0.12);
+  --purple: #8b7fff;
+  --purple-dim: rgba(139, 127, 255, 0.12);
+  --text: #eeeaf8;
+  --muted: #9090b0;
+  --dim: #55556a;
+  --green: #4ade80;
+  --green-dim: rgba(74, 222, 128, 0.1);
+  
+  --mantine-color-body: var(--bg);
+  --mantine-color-text: var(--text);
 }
 
-html[data-mantine-color-scheme="dark"] {
-  --mantine-color-body: #121212; /* your custom dark background */
-  --mantine-color-text: #31333b; /* your custom dark text */
-  --secondary-theme-color: #ffc86b;
+html, body {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
-  background-color: var(--mantine-color-body);
-  color: var(--mantine-color-text);
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Syne', sans-serif;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  color: var(--muted);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.hero-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(37, 37, 56, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(37, 37, 56, 0.5) 1px, transparent 1px);
+  background-size: 48px 48px;
+  z-index: -1;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.pulse-dot-anim {
+  animation: pulse-dot 2s infinite;
 }
